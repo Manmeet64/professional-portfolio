@@ -18,7 +18,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link
-          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,450,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
           rel="stylesheet"
         />
       </head>
