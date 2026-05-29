@@ -160,11 +160,11 @@ export function Hero() {
           {...FADE_UP}
           transition={{ ...SPRING, delay: 0.28 }}
           style={{
-            fontSize: "15px",
-            fontWeight: 400,
-            color: "rgba(255,255,255,0.5)",
+            fontSize: "17px",
+            fontWeight: 500,
+            color: "rgba(255,255,255,0.6)",
             lineHeight: 1.7,
-            maxWidth: "500px",
+            maxWidth: "520px",
             margin: "0 auto 44px",
           }}
         >
@@ -194,8 +194,7 @@ export function Hero() {
           {/* Primary CTA */}
           <a
             href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Manmeet_Singh_Resume.pdf"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -327,9 +326,9 @@ export function Hero() {
               target={social.href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
               style={{
-                fontSize: "11.5px",
+                fontSize: "13px",
                 fontWeight: 500,
-                color: "rgba(255,255,255,0.35)",
+                color: "rgba(255,255,255,0.4)",
                 letterSpacing: "0.04em",
                 transition: "color 0.25s cubic-bezier(0.32,0.72,0,1)",
                 borderBottom: "1px solid transparent",

@@ -41,13 +41,13 @@ const PROJECTS: Project[] = [
     title: "Winvesta Website Revamp",
     tagline: "HubSpot CMS to headless Next.js + Sanity",
     description:
-      "Migrated Winvesta's entire marketing site off HubSpot CMS. Built a custom Node.js migration agent to programmatically convert years of legacy HTML into structured Sanity JSON, because off-the-shelf tools couldn't handle the data structure. Cut infrastructure costs by 80%.",
+      "Migrated Winvesta's marketing site off HubSpot CMS onto a headless stack. Wrote a custom Node.js migration agent to convert legacy HTML content into structured Sanity schemas — off-the-shelf tools couldn't handle the data shape. Built the Next.js frontend from scratch: pages, layouts, and reusable components, all wired to Sanity's content lake. Cut CMS infrastructure costs by 80%.",
     tech: ["Next.js", "Sanity CMS", "Node.js", "TypeScript"],
     links: [{ label: "Live Site", href: "https://winvesta.in", type: "live" }],
     featured: true,
     accent: "59,74,107",
     category: "Fintech · Internship",
-    image: "/p3.jpg",
+    image: "/winvesta-web.png",
   },
   {
     id: 2,
@@ -82,17 +82,17 @@ const PROJECTS: Project[] = [
   {
     id: 4,
     title: "Vector",
-    tagline: "Internal ops dashboard for Momentum Health Club",
+    tagline: "Ops dashboard for Momentum Health Club",
     description:
-      "Designed and built the internal admin dashboard for Momentum. Covers member management, event attendance tracking, revenue overview, and task automation via n8n. Built for operators, not end users.",
-    tech: ["React", "TypeScript", "Supabase", "n8n", "Tailwind"],
+      "Designed and built the internal admin platform for Momentum from the ground up. Kanban task board, event management, member registrations, financials, and a team calendar — all in one place. Stack: Next.js + Supabase with real-time sync, n8n for workflow automation, and a custom design system built for operators, not end users.",
+    tech: ["Next.js", "TypeScript", "Supabase", "n8n", "Tailwind"],
     links: [
-      { label: "In Progress", href: "#", type: "live" },
+      { label: "Live App", href: "https://vector-momentum-virid.vercel.app", type: "live" },
     ],
     featured: true,
-    accent: "59,74,107",
-    category: "Dashboard · WIP",
-    image: "/p4.jpg",
+    accent: "200,100,60",
+    category: "Dashboard · Founder",
+    image: "/vector.png",
   },
   {
     id: 5,
@@ -111,13 +111,13 @@ const PROJECTS: Project[] = [
   },
   {
     id: 6,
-    title: "University Portal",
-    tagline: "Student management system",
+    title: "A3S Implementation",
+    tagline: "Auth-as-a-Service with ABAC for a university portal",
     description:
-      "A full-featured university management system with student records, course enrollment, grade tracking, and faculty portals. Built with a relational database schema and role-based access control.",
-    tech: ["React", "Node.js", "PostgreSQL", "Express.js"],
+      "Built a university portal demo on top of A3S, an ABAC authorization server. The interesting part: a custom Modifier Server that hooks into A3S token issuance via mTLS — it intercepts raw OIDC claims and enriches them with role, department, and access level based on email domain before the JWT is signed. React frontend, Express BFF with token cloaking endpoints, and shell-scripted namespace + policy setup for the full auth flow.",
+    tech: ["React", "Node.js", "Express.js", "Go", "Docker", "OIDC"],
     links: [
-      { label: "GitHub", href: "https://github.com/Manmeet64", type: "github" },
+      { label: "GitHub", href: "https://github.com/Manmeet64/A3S", type: "github" },
     ],
     featured: false,
     accent: "130,80,160",

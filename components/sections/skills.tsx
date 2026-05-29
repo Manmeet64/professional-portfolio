@@ -125,7 +125,7 @@ function SkillPill({ skill }: { skill: Skill }) {
       </span>
       <span
         style={{
-          fontSize: "12.5px",
+          fontSize: "13.5px",
           fontWeight: 500,
           color: hovered ? "var(--accent)" : "var(--text-secondary)",
           letterSpacing: "0.01em",

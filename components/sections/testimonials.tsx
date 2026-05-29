@@ -98,10 +98,10 @@ function TestimonialCard({ t, index }: { t: Testimonial; index: number }) {
 
       {/* Quote text */}
       <p style={{
-        fontSize: "15.5px",
+        fontSize: "16.5px",
         color: "var(--text-secondary)",
         lineHeight: 1.75,
-        fontWeight: 450,
+        fontWeight: 500,
         flex: 1,
         marginBottom: "32px",
         letterSpacing: "-0.005em",
@@ -263,18 +263,10 @@ export function Testimonials() {
             color: "var(--text-primary)",
             letterSpacing: "-0.04em",
             lineHeight: 1.05,
-            marginBottom: "14px",
+            marginBottom: "0",
           }}>
             People I&apos;ve worked with.
           </h2>
-          <p style={{
-            fontSize: "14px",
-            color: "var(--text-muted)",
-            fontWeight: 450,
-            letterSpacing: "0.01em",
-          }}>
-            From LinkedIn — colleagues and managers at Winvesta.
-          </p>
         </motion.div>
 
         {/* 2-col grid */}

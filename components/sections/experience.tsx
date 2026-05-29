@@ -275,7 +275,7 @@ function TimelineEntry({
               display: "inline-flex",
               alignItems: "center",
               gap: "4px",
-              fontSize: "14px",
+              fontSize: "15.5px",
               fontWeight: 500,
               color: "var(--text-secondary)",
               marginBottom: "16px",
@@ -309,7 +309,7 @@ function TimelineEntry({
         ) : (
           <p
             style={{
-              fontSize: "14px",
+              fontSize: "15.5px",
               fontWeight: 500,
               color: "var(--text-secondary)",
               marginBottom: "16px",
@@ -338,7 +338,7 @@ function TimelineEntry({
               style={{
                 display: "flex",
                 gap: "10px",
-                fontSize: "14px",
+                fontSize: "15.5px",
                 color: "var(--text-secondary)",
                 lineHeight: 1.7,
               }}

@@ -74,7 +74,8 @@
 
   body {
     font-family: var(--font-sans);
-    font-weight: 450;
+    font-size: 16px;
+    font-weight: 500;
     background-color: var(--bg);
     color: var(--text-primary);
     overflow-x: hidden;
@@ -82,8 +83,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  p, li, span {
-    font-weight: 450;
+  p {
+    font-weight: 500;
   }
 
   a {

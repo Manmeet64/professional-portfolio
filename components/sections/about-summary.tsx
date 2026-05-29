@@ -27,11 +27,6 @@ const FADE_UP = {
   viewport: { once: true, margin: "-60px" },
 };
 
-const stats = [
-  { value: "85%",   label: "Faster withdrawals" },
-  { value: "2,800+", label: "Momentum members" },
-  { value: "4+",    label: "Prod systems shipped" },
-];
 
 // Inline SVGs — no icon library needed
 const ArrowUpRight = () => (
@@ -175,47 +170,6 @@ export function AboutSummary() {
             </motion.div>
           </div>
 
-          {/* Stat pills row */}
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                {...FADE_UP}
-                transition={{ ...SPRING, delay: 0.25 + i * 0.08 }}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  padding: "12px 18px",
-                  borderRadius: "14px",
-                  backgroundColor: "var(--bg-card)",
-                  border: "1px solid var(--border)",
-                  boxShadow: "0 2px 8px -2px rgba(0,0,0,0.06)",
-                  minWidth: "80px",
-                }}
-              >
-                <span style={{
-                  fontSize: "18px",
-                  fontWeight: 700,
-                  color: "var(--text-primary)",
-                  letterSpacing: "-0.03em",
-                  lineHeight: 1,
-                }}>
-                  {stat.value}
-                </span>
-                <span style={{
-                  fontSize: "10px",
-                  fontWeight: 500,
-                  color: "var(--text-muted)",
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                  marginTop: "4px",
-                }}>
-                  {stat.label}
-                </span>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         {/* ── RIGHT: Summary text ── */}
@@ -271,7 +225,7 @@ export function AboutSummary() {
             {...FADE_UP}
             transition={{ ...SPRING, delay: 0.26 }}
             style={{
-              fontSize: "15.5px",
+              fontSize: "17px",
               color: "var(--text-secondary)",
               lineHeight: 1.75,
               marginBottom: "16px",
@@ -290,7 +244,7 @@ export function AboutSummary() {
             {...FADE_UP}
             transition={{ ...SPRING, delay: 0.32 }}
             style={{
-              fontSize: "15.5px",
+              fontSize: "17px",
               color: "var(--text-secondary)",
               lineHeight: 1.75,
               marginBottom: "36px",
@@ -364,8 +318,7 @@ export function AboutSummary() {
           >
             <a
               href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Manmeet_Singh_Resume.pdf"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
