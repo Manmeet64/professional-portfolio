@@ -122,7 +122,7 @@ const PROJECTS: Project[] = [
     featured: false,
     accent: "130,80,160",
     category: "Full-Stack · Project",
-    image: "/p2.jpg",
+    image: "/a3s.png",
   },
 ];
 

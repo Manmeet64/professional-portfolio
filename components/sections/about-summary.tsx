@@ -112,7 +112,7 @@ export function AboutSummary() {
                 }}
               >
                 <img
-                  src="/man.png"
+                  src="/hero-photo.jpg"
                   alt="Manmeet Singh"
                   style={{
                     width: "100%",
